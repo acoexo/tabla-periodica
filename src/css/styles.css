@@ -15,6 +15,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #000;
 }
 main{
     display: flex;
@@ -27,16 +28,21 @@ main{
 .tabla {
     display: grid;
     grid-template-columns: repeat(18, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    background-color: #000;
+    padding: 1rem;
 }
 
 .Celda{
     width: 3rem;
     height: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-    
 
 .H  { grid-area: 1 / 1 / 2 / 2; }
 .He { grid-area: 1 / 18 / 2 / 19; }
@@ -171,5 +177,32 @@ main{
 
 
 .H, .C, .N, .O, .P, .S, .Se{
-    background-color: var();
+    background-color: var(--no-metales);
+}
+.Li, .Na, .K, .Rb, .Cs, .Fr{
+    background-color: var(--metales-alcalinos);
+}
+.Be,.Mg,.Ca,.Sr,.Ba,.Ra{
+    background-color: var(--alcalinoterreos);
+}
+.Sc,.Ti,.V,.Cr,.Mn,.Fe,.Co,.Ni,.Cu,.Zn,.Y,.Zr,.Lu,.Lr,.Nb,.Mo,.Tc,.Ru,.Rh,.Pd,.Ag,.Cd,.Hf,.Ta,.W,.Re,.Os,.Ir,.Pt,.Au,.Hg,.Rf,.Db,.Sg,.Bh,.Hs,.Mt,.Ds,.Rg,.Cn{
+    background-color: var(--metales-de-transcision);
+}
+.Al,.Ga,.In,.Sn,.Tl,.Pb,.Bi,.Nh,.Fl,.Mc,.Lv{
+    background-color: var(--otros-metales);
+}
+.B,.Si,.Ge,.As,.Sb,.Te,.Po{
+    background-color: var(--metaloides);
+}
+.F,.Cl,.Br,.I,.At,.Ts{
+    background-color: var(--halogenos);
+}
+.He,.Ne,.Ar,.Kr,.Xe,.Rn,.Og{
+    background-color: var(--gases-nobles);
+}
+.La,.Ce,.Pr,.Nd,.Pm,.Sm,.Eu,.Gd,.Tb,.Dy,.Ho,.Er,.Tm,.Yb{
+    background-color: var(--actinidos);
+}
+.Ac,.Th,.Pa,.U,.Np,.Pu,.Am,.Cm,.Bk,.Cf,.Es,.Fm,.Md,.No{
+    background-color: var(--lantanidos);
 }

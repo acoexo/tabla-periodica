@@ -1,1 +1,2 @@
-v0.1: Seting the grid and css variables
+v0.1: Setting the grid and css variables
+v0.2: Setting the colors 
